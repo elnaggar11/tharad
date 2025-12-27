@@ -13,24 +13,26 @@ class LoginView extends StatelessWidget {
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 20.h),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 120.h),
-            AppImage(image: 'logo.png', height: 58.h, width: 178.w),
-            SizedBox(height: 100.h),
-            Text('تسجيل الدخول', style: Theme.of(context).textTheme.bodyLarge),
-            SizedBox(height: 24.h),
-            Align(
-              alignment: AlignmentGeometry.centerRight,
-              child: Text('البريد الالكتروني'),
+            Center(
+              child: AppImage(image: 'logo.png', height: 58.h, width: 178.w),
             ),
+            SizedBox(height: 100.h),
+            Center(
+              child: Text(
+                'تسجيل الدخول',
+                style: Theme.of(context).textTheme.bodyLarge,
+              ),
+            ),
+            SizedBox(height: 24.h),
+            Text('البريد الالكتروني'),
 
             SizedBox(height: 6.h),
             AppInput(hintText: 'Tharad@gmail.com'),
             SizedBox(height: 12.h),
-            Align(
-              alignment: AlignmentGeometry.centerRight,
-              child: Text('البريد الالكتروني'),
-            ),
+            Text('البريد الالكتروني'),
             SizedBox(height: 6.h),
             AppInput(
               hintText: '***********',
