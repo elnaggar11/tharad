@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:tharad/core/ui/app_button.dart';
 import 'package:tharad/core/ui/app_image.dart';
-import 'package:tharad/core/ui/app_input.dart';
 import 'package:tharad/core/ui/pin_code_text_field_widget.dart';
 
 class OtpView extends StatelessWidget {

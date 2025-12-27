@@ -3,7 +3,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:tharad/core/logic/helper_methods.dart';
 import 'package:tharad/core/logic/theme.dart';
 import 'package:tharad/views/auth/login_view.dart';
-import 'package:tharad/views/auth/otp_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
           builder: (context, child) =>
               Directionality(textDirection: TextDirection.rtl, child: child!),
 
-          home: OtpView(),
+          home: LoginView(),
         );
       },
     );
