@@ -18,7 +18,7 @@ class PinCodeTextFieldWidget extends StatelessWidget {
       cursorColor: Colors.grey,
       pinTheme: PinTheme(
         shape: PinCodeFieldShape.box,
-        activeFillColor: Colors.grey,
+        activeFillColor: Colors.white,
         selectedFillColor: Colors.grey,
         inactiveFillColor: Colors.grey,
         activeColor: Colors.grey.shade300,
