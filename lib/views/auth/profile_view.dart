@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tharad/core/logic/helper_methods.dart';
 import 'package:tharad/core/ui/app_button.dart';
 import 'package:tharad/core/ui/app_image.dart';
 import 'package:tharad/core/ui/app_input.dart';
+import 'package:tharad/views/auth/login_view.dart';
 import 'package:tharad/views/widgets/dotted_select_image.dart';
 
 class ProfileView extends StatelessWidget {
@@ -91,7 +93,9 @@ class ProfileView extends StatelessWidget {
                 AppButton(isGradient: true, text: 'إنشاء حساب جديد'),
                 SizedBox(height: 16.h),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    navigateTo(LoginView());
+                  },
                   child: Center(
                     child: Text(
                       'تسجيل الخروج',

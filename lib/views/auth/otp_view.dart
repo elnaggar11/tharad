@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tharad/core/logic/helper_methods.dart';
 import 'package:tharad/core/ui/app_button.dart';
 import 'package:tharad/core/ui/app_image.dart';
 import 'package:tharad/core/ui/pin_code_text_field_widget.dart';
+import 'package:tharad/views/auth/login_view.dart';
 
 class OtpView extends StatelessWidget {
   const OtpView({super.key});
@@ -56,7 +58,13 @@ class OtpView extends StatelessWidget {
             ),
             SizedBox(height: 40.h),
 
-            AppButton(isGradient: true, text: 'المتابعه'),
+            AppButton(
+              isGradient: true,
+              text: 'المتابعه',
+              onTap: () {
+                navigateTo(LoginView());
+              },
+            ),
           ],
         ),
       ),

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tharad/core/logic/helper_methods.dart';
 import 'package:tharad/core/ui/app_button.dart';
 import 'package:tharad/core/ui/app_image.dart';
 import 'package:tharad/core/ui/app_input.dart';
+import 'package:tharad/views/auth/signup_view.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -64,7 +66,12 @@ class LoginView extends StatelessWidget {
                     context,
                   ).textTheme.bodyMedium!.copyWith(fontSize: 12.sp),
                 ),
-                TextButton(onPressed: () {}, child: Text('انشاء حساب جديد')),
+                TextButton(
+                  onPressed: () {
+                    navigateTo(SignupView());
+                  },
+                  child: Text('انشاء حساب جديد'),
+                ),
               ],
             ),
           ],

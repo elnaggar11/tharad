@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tharad/core/logic/helper_methods.dart';
 import 'package:tharad/core/ui/app_button.dart';
 import 'package:tharad/core/ui/app_image.dart';
 import 'package:tharad/core/ui/app_input.dart';
+import 'package:tharad/views/auth/login_view.dart';
 import 'package:tharad/views/widgets/dotted_select_image.dart';
 
 class SignupView extends StatelessWidget {
@@ -69,7 +71,12 @@ class SignupView extends StatelessWidget {
                     context,
                   ).textTheme.bodyMedium!.copyWith(fontSize: 12.sp),
                 ),
-                TextButton(onPressed: () {}, child: Text('تسجيل الدخول')),
+                TextButton(
+                  onPressed: () {
+                    navigateTo(LoginView());
+                  },
+                  child: Text('تسجيل الدخول'),
+                ),
               ],
             ),
           ],
